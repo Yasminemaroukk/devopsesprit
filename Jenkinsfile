@@ -8,7 +8,7 @@ pipeline {
         stage('Récupération du code source') {
             steps {
                 // Cette étape clone le référentiel Git
-                git 'https://github.com/Eya-Haffar/jenkinsProject.git'
+                git 'https://github.com/Yasminemaroukk/devopsesprit.git'
             }
         }
 
