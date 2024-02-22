@@ -13,7 +13,6 @@ pipeline {
                 git 'https://github.com/Yasminemaroukk/devopsesprit'
             }
         }
-
         stage('Affichage de la date système') {
             steps {
                 // Cette étape affiche la date système
