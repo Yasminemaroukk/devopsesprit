@@ -8,17 +8,17 @@ pipeline {
         stage('Récupération du code source') {
             steps {
                 // Cette étape clone le référentiel Git
-                git 'https://github.com/Yasminemaroukk/devopsesprit.git'
+                echo "hello"
             }
         }
 
         stage('Affichage de la date système') {
             steps {
                 // Cette étape affiche la date système
-                script {
-                    def date = sh(script: 'date', returnStdout: true).trim()
-                    echo "La date système est : ${date}"
-                }
+                
+                    
+                echo "La date système est : ${date}"
+                
             }
         }
     }
