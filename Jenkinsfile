@@ -17,7 +17,7 @@ pipeline {
                 // Cette étape affiche la date système
                 
                     
-                echo "La date système est : ${date}"
+                echo "La date système est "
                 
             }
         }
