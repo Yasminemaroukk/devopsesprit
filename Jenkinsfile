@@ -6,13 +6,7 @@ pipeline {
         pollSCM 'H/5 * * * *'
     }
 
-    stages {
-        stage('Récupération du code source') {
-            steps {
-                // Cette étape clone le référentiel Git
-                git 'https://github.com/Yasminemaroukk/devopsesprit'
-            }
-        }
+    
         stage('Affichage de la date système') {
             steps {
                 // Cette étape affiche la date système
