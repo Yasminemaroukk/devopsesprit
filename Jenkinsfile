@@ -6,6 +6,13 @@ pipeline {
         pollSCM 'H/5 * * * *'
     }
         stages {
+
+
+       stage('Récupération du code source') {
+            steps {
+                git 'https://github.com/Yasminemaroukk/devopsesprit'
+            }
+        }    
         
 
     
