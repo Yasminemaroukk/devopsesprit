@@ -5,6 +5,8 @@ pipeline {
         // Configuration du déclenchement du pipeline lorsqu'un push est détecté dans le référentiel Git
         pollSCM 'H/5 * * * *'
     }
+        stages {
+        
 
     
         stage('Affichage de la date système') {
