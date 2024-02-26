@@ -10,7 +10,7 @@ pipeline {
 
        stage('Récupération du code source') {
             steps {
-                git clone 'https://github.com/Yasminemaroukk/devopsesprit.git'
+                git clone https://github.com/Yasminemaroukk/devopsesprit.git
             }
         }    
         
