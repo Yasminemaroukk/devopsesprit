@@ -9,7 +9,7 @@ pipeline {
         stage('Récupération du code source') {
             steps {
                 // Cette étape clone le référentiel Git
-                git clone 'https://github.com/Yasminemaroukk/devopsesprit.git'
+                git 'https://github.com/Yasminemaroukk/devopsesprit.git'
             }
         }
  
