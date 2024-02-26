@@ -5,30 +5,23 @@ pipeline {
         // Configuration du déclenchement du pipeline lorsqu'un push est détecté dans le référentiel Git
         pollSCM 'H/5 * * * *'
     }
-        stages {
-
-
-       stage('Récupération du code source') {
+    stages {
+        stage('Récupération du code source') {
             steps {
-                git clone https://github.com/Yasminemaroukk/devopsesprit.git
+                // Cette étape clone le référentiel Git
+                git 'https://github.com/Eya-Haffar/jenkinsProject.git'
             }
-        }    
-        
-
-    
+        }
+ 
         stage('Affichage de la date système') {
             steps {
                 // Cette étape affiche la date système
                 script {
                     def date = sh(script: 'date', returnStdout: true).trim()
                     echo "La date système est : ${date}"
-
                 }
-
             }
-
         }
-
     }
-
 }
+ 
